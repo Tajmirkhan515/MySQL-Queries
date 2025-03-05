@@ -1,0 +1,1 @@
+select * from students as s where ((s.major)="cs")
