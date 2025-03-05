@@ -1,0 +1,2 @@
+select students.[std_name], students.[std_age], students.[major], students.[year], courses.[course_name],courses.[credits],courses.[instructor] from (students inner join students_courses on students_courses.[std_id]=students.[std_id])
+inner join courses on courses.[course_id]=students_courses.[course_id];
