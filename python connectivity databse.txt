@@ -1,0 +1,45 @@
+!pip install pymysql
+import pymysql
+
+def connectivityWithDB():
+    try:
+        
+        conn=pymysql.connect(
+            user="root",
+            password="",
+            host="localhost",
+            database="test",
+            charset="utf8"
+        )
+        print("Connection Successful")
+        return conn
+    except pymysql.MySQLError as e:
+        print(" Error in Connectivity ", e)
+
+
+def retriveData(conn):
+    try:
+        cursor=conn.cursor()
+        query="select * from users"
+        cursor.execute(query)
+        data=cursor.fetchall()
+        print(data)
+    
+    except pymysql.MySQLError as e:
+        print(" Error in retriving ", e)
+
+def insertData(conn):
+    try:
+        cursor=conn.cursor()
+        query='insert into users values (6,"Rashid");'
+        cursor.execute(query)
+        conn.commit()
+        print("Data Entered Successfully")
+        conn.clos()
+        retriveData(conn)
+    except pymysql.MySQLError as e:
+        print(" Error in insertion : ", e)
+
+con=connectivityWithDB()  
+retriveData(con)
+insertData(con)
