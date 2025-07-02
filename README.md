@@ -29,4 +29,4 @@ Feel free to contribute by:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-+ Results reproduced by [@saqibbedar](https://github.com/saqibbedar) on 2025-07-02 (commit [`77769ec`](https://github.com/saqibbedar/MySQL-Queries/commit/77769ec3910b59f49d7d2fe2127e5764868bf53d))
++ Results reproduced by [@saqibbedar](https://github.com/saqibbedar) on 2025-07-02 (commit [`77769ec`](https://github.com/saqibbedar/MySQL-Queries/commit/77769ec3910b59f49d7d2fe2127e5764868bf53d)) 
